@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sucuri", "Sucuri\Sucuri.csproj", "{88DDA855-079E-4F94-804C-EB700CCF0AFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88DDA855-079E-4F94-804C-EB700CCF0AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88DDA855-079E-4F94-804C-EB700CCF0AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88DDA855-079E-4F94-804C-EB700CCF0AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88DDA855-079E-4F94-804C-EB700CCF0AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FC52A18-96A1-4192-A98B-304896A217EE}
+	EndGlobalSection
+EndGlobal
