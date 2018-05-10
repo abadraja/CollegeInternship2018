@@ -14,6 +14,7 @@ namespace Sucuri
     {
         public Form1()
         {
+            // connectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True"
             InitializeComponent();
         }
 
