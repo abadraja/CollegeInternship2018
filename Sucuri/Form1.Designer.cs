@@ -30,14 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idprodusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeSucDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pretDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.naturalDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.procentZaharDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.procentFructeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nrDeVanzariDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timpulMediuDeVanzareDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sucuriBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet = new Sucuri.Database1DataSet();
             this.sucuriTableAdapter = new Sucuri.Database1DataSetTableAdapters.SucuriTableAdapter();
@@ -76,6 +68,16 @@
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.button8 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.idprodusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeSucDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pret = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.naturalDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.procentZaharDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.procentFructeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nrDeVanzariDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timpulMediuDeVanzareDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sucuriBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
@@ -99,7 +101,7 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idprodusDataGridViewTextBoxColumn,
             this.numeSucDataGridViewTextBoxColumn,
-            this.pretDataGridViewTextBoxColumn,
+            this.Pret,
             this.naturalDataGridViewCheckBoxColumn,
             this.procentZaharDataGridViewTextBoxColumn,
             this.procentFructeDataGridViewTextBoxColumn,
@@ -110,54 +112,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(628, 214);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // idprodusDataGridViewTextBoxColumn
-            // 
-            this.idprodusDataGridViewTextBoxColumn.DataPropertyName = "Id_produs";
-            this.idprodusDataGridViewTextBoxColumn.HeaderText = "Id_produs";
-            this.idprodusDataGridViewTextBoxColumn.Name = "idprodusDataGridViewTextBoxColumn";
-            // 
-            // numeSucDataGridViewTextBoxColumn
-            // 
-            this.numeSucDataGridViewTextBoxColumn.DataPropertyName = "NumeSuc";
-            this.numeSucDataGridViewTextBoxColumn.HeaderText = "NumeSuc";
-            this.numeSucDataGridViewTextBoxColumn.Name = "numeSucDataGridViewTextBoxColumn";
-            // 
-            // pretDataGridViewTextBoxColumn
-            // 
-            this.pretDataGridViewTextBoxColumn.DataPropertyName = "Pret";
-            this.pretDataGridViewTextBoxColumn.HeaderText = "Pret";
-            this.pretDataGridViewTextBoxColumn.Name = "pretDataGridViewTextBoxColumn";
-            // 
-            // naturalDataGridViewCheckBoxColumn
-            // 
-            this.naturalDataGridViewCheckBoxColumn.DataPropertyName = "Natural";
-            this.naturalDataGridViewCheckBoxColumn.HeaderText = "Natural";
-            this.naturalDataGridViewCheckBoxColumn.Name = "naturalDataGridViewCheckBoxColumn";
-            // 
-            // procentZaharDataGridViewTextBoxColumn
-            // 
-            this.procentZaharDataGridViewTextBoxColumn.DataPropertyName = "ProcentZahar";
-            this.procentZaharDataGridViewTextBoxColumn.HeaderText = "ProcentZahar";
-            this.procentZaharDataGridViewTextBoxColumn.Name = "procentZaharDataGridViewTextBoxColumn";
-            // 
-            // procentFructeDataGridViewTextBoxColumn
-            // 
-            this.procentFructeDataGridViewTextBoxColumn.DataPropertyName = "ProcentFructe";
-            this.procentFructeDataGridViewTextBoxColumn.HeaderText = "ProcentFructe";
-            this.procentFructeDataGridViewTextBoxColumn.Name = "procentFructeDataGridViewTextBoxColumn";
-            // 
-            // nrDeVanzariDataGridViewTextBoxColumn
-            // 
-            this.nrDeVanzariDataGridViewTextBoxColumn.DataPropertyName = "NrDeVanzari";
-            this.nrDeVanzariDataGridViewTextBoxColumn.HeaderText = "NrDeVanzari";
-            this.nrDeVanzariDataGridViewTextBoxColumn.Name = "nrDeVanzariDataGridViewTextBoxColumn";
-            // 
-            // timpulMediuDeVanzareDataGridViewTextBoxColumn
-            // 
-            this.timpulMediuDeVanzareDataGridViewTextBoxColumn.DataPropertyName = "TimpulMediuDeVanzare";
-            this.timpulMediuDeVanzareDataGridViewTextBoxColumn.HeaderText = "TimpulMediuDeVanzare";
-            this.timpulMediuDeVanzareDataGridViewTextBoxColumn.Name = "timpulMediuDeVanzareDataGridViewTextBoxColumn";
             // 
             // sucuriBindingSource
             // 
@@ -353,14 +307,16 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(6, 18);
+            this.richTextBox1.Location = new System.Drawing.Point(6, 39);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(170, 137);
+            this.richTextBox1.Size = new System.Drawing.Size(170, 116);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.button9);
+            this.groupBox4.Controls.Add(this.textBox9);
             this.groupBox4.Controls.Add(this.richTextBox1);
             this.groupBox4.Location = new System.Drawing.Point(12, 398);
             this.groupBox4.Name = "groupBox4";
@@ -509,6 +465,73 @@
             this.button8.Text = "Afiseaza produsele vandute timp de o zi";
             this.button8.UseVisualStyleBackColor = true;
             // 
+            // textBox9
+            // 
+            this.textBox9.AcceptsTab = true;
+            this.textBox9.Location = new System.Drawing.Point(6, 13);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(80, 20);
+            this.textBox9.TabIndex = 5;
+            this.textBox9.Text = "Procent_Zahar";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(101, 13);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 6;
+            this.button9.Text = "Afiseaza";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // idprodusDataGridViewTextBoxColumn
+            // 
+            this.idprodusDataGridViewTextBoxColumn.DataPropertyName = "Id_produs";
+            this.idprodusDataGridViewTextBoxColumn.HeaderText = "Id_produs";
+            this.idprodusDataGridViewTextBoxColumn.Name = "idprodusDataGridViewTextBoxColumn";
+            // 
+            // numeSucDataGridViewTextBoxColumn
+            // 
+            this.numeSucDataGridViewTextBoxColumn.DataPropertyName = "NumeSuc";
+            this.numeSucDataGridViewTextBoxColumn.HeaderText = "NumeSuc";
+            this.numeSucDataGridViewTextBoxColumn.Name = "numeSucDataGridViewTextBoxColumn";
+            // 
+            // Pret
+            // 
+            this.Pret.DataPropertyName = "Pret";
+            this.Pret.HeaderText = "Pret";
+            this.Pret.Name = "Pret";
+            // 
+            // naturalDataGridViewCheckBoxColumn
+            // 
+            this.naturalDataGridViewCheckBoxColumn.DataPropertyName = "Natural";
+            this.naturalDataGridViewCheckBoxColumn.HeaderText = "Natural";
+            this.naturalDataGridViewCheckBoxColumn.Name = "naturalDataGridViewCheckBoxColumn";
+            // 
+            // procentZaharDataGridViewTextBoxColumn
+            // 
+            this.procentZaharDataGridViewTextBoxColumn.DataPropertyName = "ProcentZahar";
+            this.procentZaharDataGridViewTextBoxColumn.HeaderText = "ProcentZahar";
+            this.procentZaharDataGridViewTextBoxColumn.Name = "procentZaharDataGridViewTextBoxColumn";
+            // 
+            // procentFructeDataGridViewTextBoxColumn
+            // 
+            this.procentFructeDataGridViewTextBoxColumn.DataPropertyName = "ProcentFructe";
+            this.procentFructeDataGridViewTextBoxColumn.HeaderText = "ProcentFructe";
+            this.procentFructeDataGridViewTextBoxColumn.Name = "procentFructeDataGridViewTextBoxColumn";
+            // 
+            // nrDeVanzariDataGridViewTextBoxColumn
+            // 
+            this.nrDeVanzariDataGridViewTextBoxColumn.DataPropertyName = "NrDeVanzari";
+            this.nrDeVanzariDataGridViewTextBoxColumn.HeaderText = "NrDeVanzari";
+            this.nrDeVanzariDataGridViewTextBoxColumn.Name = "nrDeVanzariDataGridViewTextBoxColumn";
+            // 
+            // timpulMediuDeVanzareDataGridViewTextBoxColumn
+            // 
+            this.timpulMediuDeVanzareDataGridViewTextBoxColumn.DataPropertyName = "TimpulMediuDeVanzare";
+            this.timpulMediuDeVanzareDataGridViewTextBoxColumn.HeaderText = "TimpulMediuDeVanzare";
+            this.timpulMediuDeVanzareDataGridViewTextBoxColumn.Name = "timpulMediuDeVanzareDataGridViewTextBoxColumn";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -539,6 +562,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox7.ResumeLayout(false);
@@ -557,14 +581,6 @@
         private Database1DataSet database1DataSet;
         private System.Windows.Forms.BindingSource sucuriBindingSource;
         private Database1DataSetTableAdapters.SucuriTableAdapter sucuriTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idprodusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeSucDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pretDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn naturalDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn procentZaharDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn procentFructeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nrDeVanzariDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn timpulMediuDeVanzareDataGridViewTextBoxColumn;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button1;
@@ -600,6 +616,16 @@
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.RichTextBox richTextBox4;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idprodusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeSucDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Pret;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn naturalDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn procentZaharDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn procentFructeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nrDeVanzariDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn timpulMediuDeVanzareDataGridViewTextBoxColumn;
     }
 }
 
