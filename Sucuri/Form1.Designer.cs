@@ -78,7 +78,6 @@
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sucuriBindingSource)).BeginInit();
@@ -538,28 +537,19 @@
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.richTextBox4);
             this.groupBox11.Controls.Add(this.button8);
-            this.groupBox11.Location = new System.Drawing.Point(508, 340);
+            this.groupBox11.Location = new System.Drawing.Point(509, 240);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(132, 234);
+            this.groupBox11.Size = new System.Drawing.Size(132, 334);
             this.groupBox11.TabIndex = 12;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "10";
             // 
-            // richTextBox4
-            // 
-            this.richTextBox4.Location = new System.Drawing.Point(7, 65);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(119, 153);
-            this.richTextBox4.TabIndex = 1;
-            this.richTextBox4.Text = "";
-            // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(7, 20);
+            this.button8.Location = new System.Drawing.Point(1, 262);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(119, 38);
+            this.button8.Size = new System.Drawing.Size(119, 62);
             this.button8.TabIndex = 0;
             this.button8.Text = "Afiseaza produsele vandute timp de o zi";
             this.button8.UseVisualStyleBackColor = true;
@@ -647,7 +637,6 @@
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.RichTextBox richTextBox4;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Button button9;
