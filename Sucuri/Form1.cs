@@ -20,8 +20,13 @@ namespace Sucuri
         SqlDataAdapter sAdapter;
         SqlCommandBuilder sBuilder;
         DataSet sDs;
-        DataSet ds;
         DataTable sTable;
+
+        SqlCommand sCommand2;
+        SqlDataAdapter sAdapter2;
+        SqlCommandBuilder sBuilder2;
+        DataSet sDs2;
+        DataTable sTable2;
 
         public Form1()
         {
@@ -185,6 +190,115 @@ namespace Sucuri
                 this.dataGridView1.Sort(this.dataGridView1.Columns["Pret"], ListSortDirection.Descending);
 
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string sql = "Select MAX(NrDeFolosire) AS MaxFolosire FROM Fructe"; //Comanda sql de select
+            SqlConnection connection = new SqlConnection(connectionString); // conectiunea
+            connection.Open(); // deschiderea si activarea
+            sCommand2 = new SqlCommand(sql, connection); // se utilizeaza comanda sql si connection
+            sAdapter2 = new SqlDataAdapter(sCommand2); // utilizarea comenzii command
+            sBuilder2 = new SqlCommandBuilder(sAdapter2); // adapter
+            sDs2 = new DataSet(); //crearea DataSet
+            sAdapter2.Fill(sDs2, "Fructe"); //Folosirea adapterului asupra tabelului elev
+            sTable2 = sDs2.Tables["Fructe"]; // folosirea table asupra tabelului elev
+            connection.Close(); // inchiderea conectiunii
+                                // TODO: This line of code loads data into the 'database1DataSet.Sucuri' table. You can move, or remove it, as needed.
+            foreach (DataRow row in this.sTable2.Rows)
+            {
+                label2.Text = row["MaxFolosire"].ToString();
+            }
+        }
+
+        private void groupBox6_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            string sql = "SELECT Id_produs, NumeSuc, ProcentFructe, ProcentZahar, Natural FROM Sucuri";
+
+            SqlConnection connection = new SqlConnection(connectionString);
+            sCommand = new SqlCommand(sql, connection); // se utilizeaza comanda sql si connection
+
+            sAdapter = new SqlDataAdapter(sCommand);
+            sBuilder = new SqlCommandBuilder(sAdapter); // adapter
+            connection.Open();
+            sDs = new DataSet(); //crearea DataSet
+            sAdapter.Fill(sDs, "Sucuri"); //Folosirea adapterului asupra tabelului elev
+            sTable = sDs.Tables["Sucuri"]; // folosirea table asupra tabelului elev
+            connection.Close();
+
+            dataGridView1.DataSource = sDs.Tables["Sucuri"];
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string sql = "Select AVG(Pret) AS Naturals FROM Sucuri WHERE Natural=1"; //Comanda sql de select
+            SqlConnection connection = new SqlConnection(connectionString); // conectiunea
+            connection.Open(); // deschiderea si activarea
+            sCommand = new SqlCommand(sql, connection); // se utilizeaza comanda sql si connection
+            sAdapter = new SqlDataAdapter(sCommand); // utilizarea comenzii command
+            sBuilder = new SqlCommandBuilder(sAdapter); // adapter
+            sDs = new DataSet(); //crearea DataSet
+            sAdapter.Fill(sDs, "Sucuri"); //Folosirea adapterului asupra tabelului elev
+            sTable = sDs.Tables["Sucuri"]; // folosirea table asupra tabelului elev
+            connection.Close(); // inchiderea conectiunii
+                                // TODO: This line of code loads data into the 'database1DataSet.Sucuri' table. You can move, or remove it, as needed.
+            foreach (DataRow row in this.sTable.Rows)
+            {
+                label3.Text = row["Naturals"].ToString();
+            }
+        }
+
+        private void groupBox8_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string sql = "SELECT * FROM Sucuri WHERE TimpulMediuDeVanzare < 500";
+
+            SqlConnection connection = new SqlConnection(connectionString);
+            sCommand = new SqlCommand(sql, connection); // se utilizeaza comanda sql si connection
+
+            sAdapter = new SqlDataAdapter(sCommand);
+            sBuilder = new SqlCommandBuilder(sAdapter); // adapter
+            connection.Open();
+            sDs = new DataSet(); //crearea DataSet
+            sAdapter.Fill(sDs, "Sucuri"); //Folosirea adapterului asupra tabelului elev
+            sTable = sDs.Tables["Sucuri"]; // folosirea table asupra tabelului elev
+            connection.Close();
+            Console.WriteLine(this.dataGridView1.Columns["Pret"]);
+            Console.WriteLine(this.dataGridView1.Columns["TimpulMediuDeVanzare"]);
+            dataGridView1.DataSource = sDs.Tables["Sucuri"];
+            this.dataGridView1.Sort(this.dataGridView1.Columns[7], ListSortDirection.Descending);
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            string sql = "SELECT * FROM Sucuri WHERE TimpulMediuDeVanzare <= 24 AND NrDeVanzari >= 350";
+
+            SqlConnection connection = new SqlConnection(connectionString);
+            sCommand = new SqlCommand(sql, connection); // se utilizeaza comanda sql si connection
+
+            sAdapter = new SqlDataAdapter(sCommand);
+            sBuilder = new SqlCommandBuilder(sAdapter); // adapter
+            connection.Open();
+            sDs = new DataSet(); //crearea DataSet
+            sAdapter.Fill(sDs, "Sucuri"); //Folosirea adapterului asupra tabelului elev
+            sTable = sDs.Tables["Sucuri"]; // folosirea table asupra tabelului elev
+            connection.Close();
+            Console.WriteLine(this.dataGridView1.Columns["Pret"]);
+            Console.WriteLine(this.dataGridView1.Columns["TimpulMediuDeVanzare"]);
+            dataGridView1.DataSource = sDs.Tables["Sucuri"];
+
         }
     }
 }

@@ -60,6 +60,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -71,15 +72,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.button11 = new System.Windows.Forms.Button();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.button8 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.button11 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sucuriBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
@@ -358,19 +358,28 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.button10);
             this.groupBox4.Controls.Add(this.button9);
             this.groupBox4.Controls.Add(this.textBox9);
             this.groupBox4.Location = new System.Drawing.Point(12, 398);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(182, 166);
+            this.groupBox4.Size = new System.Drawing.Size(182, 127);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "4";
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(13, 531);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(353, 43);
+            this.button10.TabIndex = 7;
+            this.button10.Text = "Reseteaza";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(4, 45);
+            this.button9.Location = new System.Drawing.Point(4, 71);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(172, 35);
             this.button9.TabIndex = 6;
@@ -397,6 +406,7 @@
             this.groupBox6.TabIndex = 7;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "6";
+            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
             // 
             // label2
             // 
@@ -414,6 +424,7 @@
             this.button4.TabIndex = 0;
             this.button4.Text = "Tipul de fructe cel mai  des folosit";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // groupBox7
             // 
@@ -433,6 +444,7 @@
             this.button5.TabIndex = 0;
             this.button5.Text = "Creaza tabela cu sucuri pentru copii";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // groupBox8
             // 
@@ -440,15 +452,16 @@
             this.groupBox8.Controls.Add(this.button6);
             this.groupBox8.Location = new System.Drawing.Point(372, 398);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(129, 166);
+            this.groupBox8.Size = new System.Drawing.Size(129, 85);
             this.groupBox8.TabIndex = 9;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "8";
+            this.groupBox8.Enter += new System.EventHandler(this.groupBox8_Enter);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 67);
+            this.label3.Location = new System.Drawing.Point(46, 63);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 1;
@@ -461,6 +474,7 @@
             this.button6.TabIndex = 0;
             this.button6.Text = "Determina media preturilor sucurilor naturale";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // groupBox9
             // 
@@ -469,17 +483,45 @@
             this.groupBox9.Controls.Add(this.textBox10);
             this.groupBox9.Location = new System.Drawing.Point(200, 398);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(166, 166);
+            this.groupBox9.Size = new System.Drawing.Size(166, 127);
             this.groupBox9.TabIndex = 10;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "5";
             // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(6, 71);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(152, 35);
+            this.button11.TabIndex = 8;
+            this.button11.Text = "Afiseaza";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // textBox11
+            // 
+            this.textBox11.AcceptsTab = true;
+            this.textBox11.Location = new System.Drawing.Point(45, 45);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(77, 20);
+            this.textBox11.TabIndex = 9;
+            this.textBox11.Text = "ProcentZahar";
+            // 
+            // textBox10
+            // 
+            this.textBox10.AcceptsTab = true;
+            this.textBox10.Location = new System.Drawing.Point(45, 19);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(77, 20);
+            this.textBox10.TabIndex = 8;
+            this.textBox10.Text = "ProcentFructe";
+            // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.button7);
-            this.groupBox10.Location = new System.Drawing.Point(508, 233);
+            this.groupBox10.Location = new System.Drawing.Point(372, 489);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(132, 100);
+            this.groupBox10.Size = new System.Drawing.Size(132, 85);
             this.groupBox10.TabIndex = 11;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "9";
@@ -488,10 +530,11 @@
             // 
             this.button7.Location = new System.Drawing.Point(7, 13);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(119, 81);
+            this.button7.Size = new System.Drawing.Size(119, 62);
             this.button7.TabIndex = 0;
             this.button7.Text = "Creaza tabela cu lista celor mai populare produse in ordine descrescatoare";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // groupBox11
             // 
@@ -499,7 +542,7 @@
             this.groupBox11.Controls.Add(this.button8);
             this.groupBox11.Location = new System.Drawing.Point(508, 340);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(132, 224);
+            this.groupBox11.Size = new System.Drawing.Size(132, 234);
             this.groupBox11.TabIndex = 12;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "10";
@@ -520,50 +563,14 @@
             this.button8.TabIndex = 0;
             this.button8.Text = "Afiseaza produsele vandute timp de o zi";
             this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(7, 103);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(169, 27);
-            this.button10.TabIndex = 7;
-            this.button10.Text = "Reseteaza";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // textBox10
-            // 
-            this.textBox10.AcceptsTab = true;
-            this.textBox10.Location = new System.Drawing.Point(45, 19);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(77, 20);
-            this.textBox10.TabIndex = 8;
-            this.textBox10.Text = "ProcentFructe";
-            // 
-            // textBox11
-            // 
-            this.textBox11.AcceptsTab = true;
-            this.textBox11.Location = new System.Drawing.Point(45, 45);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(77, 20);
-            this.textBox11.TabIndex = 9;
-            this.textBox11.Text = "ProcentZahar";
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(6, 71);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(152, 35);
-            this.button11.TabIndex = 8;
-            this.button11.Text = "Afiseaza";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(648, 578);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.groupBox11);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);
