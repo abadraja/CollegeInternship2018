@@ -60,9 +60,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.textBox9 = new System.Windows.Forms.TextBox();
+            this.button10 = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
@@ -366,16 +366,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "4";
             // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(13, 531);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(353, 43);
-            this.button10.TabIndex = 7;
-            this.button10.Text = "Reseteaza";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
             // button9
             // 
             this.button9.Location = new System.Drawing.Point(4, 71);
@@ -394,6 +384,16 @@
             this.textBox9.Size = new System.Drawing.Size(80, 20);
             this.textBox9.TabIndex = 5;
             this.textBox9.Text = "Procent_Zahar";
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(13, 531);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(353, 43);
+            this.button10.TabIndex = 7;
+            this.button10.Text = "Reseteaza";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // groupBox6
             // 
@@ -547,7 +547,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(1, 262);
+            this.button8.Location = new System.Drawing.Point(8, 262);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(119, 62);
             this.button8.TabIndex = 0;

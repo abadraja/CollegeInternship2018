@@ -119,7 +119,7 @@ namespace Sucuri
         {
             if (!(textBox8.Text == null || textBox8.Text == "Codul Produsului"))
             {
-                database1DataSet.Sucuri.Rows[Int32.Parse(textBox8.Text) - 1].Delete();
+                dataGridView1.Rows.RemoveAt(Int32.Parse(textBox8.Text) -1);
             }
         }
 
@@ -198,7 +198,7 @@ namespace Sucuri
             }
         }
 
-        private void groupBox6_Enter(object sender, EventArgs e)
+        private void groupBox6_Enter (object sender, EventArgs e)
         {
 
         }
